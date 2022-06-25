@@ -105,7 +105,7 @@ namespace WinFormsApp.ListaEnlazada
             var estudiante = (Estudiante)estudiantesGridView.CurrentRow.DataBoundItem;
 
             var message = $"¿Seguro qué quieres eliminar el registro con el ID:{estudiante.Id}?";
-            var title = "Advertensia";
+            var title = "Advertencia";
 
             DialogResult dr = MessageBox.Show(message, title, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dr == DialogResult.Yes)
